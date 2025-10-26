@@ -1,0 +1,64 @@
+// _base.scss - Reset e stili globali
+
+@use './variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #{$color-primary-light};
+    --color-secondary: #{$color-secondary-light};
+    --color-bg: #{$color-bg-light};
+    --color-text: #{$color-text-light};
+    --color-text-secondary: rgba(50, 59, 76, 0.8);
+    --color-card-bg: #{$color-card-bg-light};
+    --color-header-bg: rgba(253, 253, 253, 0.95);
+}
+
+[data-theme="dark"] {
+    --color-primary: #{$color-primary-dark};
+    --color-secondary: #{$color-secondary-dark};
+    --color-bg: #{$color-bg-dark};
+    --color-text: #{$color-text-dark};
+    --color-text-secondary: rgba(228, 228, 228, 0.8);
+    --color-card-bg: #{$color-card-bg-dark};
+    --color-header-bg: rgba(26, 29, 41, 0.95);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-main;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}

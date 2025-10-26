@@ -1,0 +1,44 @@
+// _responsive.scss
+
+@use './variables' as *;
+
+// Media queries adicionais e ajustes gerais
+
+@media (max-width: $breakpoint-tablet) {
+    body {
+        font-size: 14px;
+    }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+    body {
+        font-size: 13px;
+    }
+    
+    .hero {
+        background-attachment: scroll; // Rimuove parallax su mobile per performance
+    }
+    }
+
+    // Print styles
+    @media print {
+    .header,
+    .theme-toggle,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        background-image: none !important;
+        color: #000 !important;
+        
+        &::before,
+        &__overlay {
+        display: none;
+        }
+    }
+    
+    .project-card {
+        page-break-inside: avoid;
+    }
+}

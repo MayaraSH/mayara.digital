@@ -1,0 +1,61 @@
+// components/_about.scss
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.about {
+    padding: $spacing-xl 2rem;
+    background-color: var(--color-secondary);
+    transition: background-color 0.3s ease;
+
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: var(--color-text);
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: var(--color-text-secondary);
+    }
+
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    &__skill-tag {
+        padding: 0.5rem 1.5rem;
+        background-color: var(--color-card-bg);
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.875rem;
+        transition: $transition;
+        color: var(--color-text);
+
+        &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    @include respond-to(tablet) {
+        padding: $spacing-lg 1rem;
+
+        &__title {
+        font-size: 2rem;
+        }
+    }
+}

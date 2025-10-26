@@ -1,0 +1,21 @@
+// main.scss
+
+// Utilities
+@use './variables' as *;
+@use './mixins' as *;
+
+// Base
+@use './base';
+
+// Components
+@use './components/theme-toggle';
+@use './components/header';
+@use './components/hero';
+@use './components/about';
+@use './components/projects';
+@use './components/project-card';
+@use './components/contact';
+@use './components/footer';
+
+// Responsive
+@use './responsive';

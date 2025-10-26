@@ -1,0 +1,45 @@
+// components/_theme-toggle.scss
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1001;
+    background-color: var(--color-card-bg);
+    border: 2px solid var(--color-text);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    @include flex-center;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: $transition;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        user-select: none;
+    }
+
+    @include respond-to(tablet) {
+        width: 50px;
+        height: 50px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+
+        &__icon {
+        font-size: 1.25rem;
+        }
+    }
+}

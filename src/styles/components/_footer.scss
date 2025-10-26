@@ -1,0 +1,21 @@
+// components/_footer.scss
+
+@use '../variables' as *;
+
+.footer {
+    padding: 2rem;
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    transition: background-color 0.3s ease;
+
+    &__container {
+        max-width: $breakpoint-desktop;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 0.95rem;
+        opacity: 0.8;
+    }
+}

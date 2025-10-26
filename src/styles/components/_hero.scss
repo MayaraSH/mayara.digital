@@ -1,0 +1,146 @@
+// components/_hero.scss
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.hero {
+    padding: 8rem 2rem 4rem;
+    min-height: 90vh;
+    @include flex-center;
+    position: relative;
+    background-image: url('/src/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(50, 59, 76, 0.8) 0%, rgba(30, 53, 105, 0.7) 100%);
+        z-index: 1;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(50, 59, 76, 0.5);
+        z-index: 2;
+    }
+
+    &__container {
+        max-width: $breakpoint-desktop;
+        margin: 0 auto;
+        @include flex-center;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+        max-width: 800px;
+    }
+
+    &__profile {
+        margin-bottom: 1rem;
+    }
+
+    &__profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #fdfdfd;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1.1;
+        color: #fdfdfd;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        font-weight: 300;
+        color: #fdfdfd;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    &__description {
+        font-size: 1.25rem;
+        line-height: 1.8;
+        color: #fdfdfd;
+        max-width: 600px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .social-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+    width: 1005;
+    margin: 0 auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+    
+
+    li {
+        img {
+            transition: all ease .3s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+    @include respond-to(tablet) {
+        padding: 6rem 1rem 2rem;
+        min-height: auto;
+
+        &__title {
+        font-size: 2.5rem;
+        }
+
+        &__subtitle {
+        font-size: 1.5rem;
+        }
+
+        &__description {
+        font-size: 1rem;
+        }
+
+        &__profile-image {
+        width: 120px;
+        height: 120px;
+        }
+    }
+
+    @include respond-to(mobile) {
+        &__title {
+        font-size: 2rem;
+        }
+
+        &__subtitle {
+        font-size: 1.25rem;
+        }
+
+        &__profile-image {
+        width: 100px;
+        height: 100px;
+        }
+    }
+}

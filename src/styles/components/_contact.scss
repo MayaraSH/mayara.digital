@@ -1,0 +1,70 @@
+// components/_contact.scss
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.contact {
+    padding: $spacing-xl 2rem;
+    background-color: var(--color-secondary);
+    transition: background-color 0.3s ease;
+
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 1.5rem;
+        color: var(--color-text);
+    }
+
+    &__description {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+        color: var(--color-text-secondary);
+    }
+
+    &__links {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        padding: 1rem 2rem;
+        background-color: var(--color-text);
+        color: var(--color-bg);
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 700;
+        transition: $transition;
+
+        &:hover {
+        opacity: 0.8;
+        transform: translateY(-3px);
+        }
+    }
+
+    @include respond-to(tablet) {
+        padding: $spacing-lg 1rem;
+
+        &__title {
+        font-size: 2rem;
+        }
+    }
+
+    @include respond-to(mobile) {
+        &__links {
+        flex-direction: column;
+        align-items: stretch;
+        }
+
+        &__link {
+        width: 100%;
+        }
+    }
+}

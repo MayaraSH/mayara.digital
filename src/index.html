@@ -8,7 +8,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Mayara Amaral | Sviluppatrice Front-End">
     <meta property="og:description" content="Sviluppatrice Front-End in formazione presso EBAC. Scopri il mio portfolio di progetti.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://raw.githubusercontent.com/MayaraSH/mayara.digital/refs/heads/main/src/images/frontend.jpg">
     <meta property="og:url" content="https://www.mayara.digital/">
     <meta property="og:type" content="website">
 
@@ -16,12 +16,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mayara Amaral | Sviluppatrice Front-End">
     <meta name="twitter:description" content="Sviluppatrice Front-End in formazione presso EBAC. Scopri il mio portfolio di progetti.">   
-    <meta name="twitter:image" content="#">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/MayaraSH/mayara.digital/refs/heads/main/src/images/frontend.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="/src/images/favicon.png" type="image/x-icon">
@@ -64,8 +59,8 @@
                 <div class="hero__profile">
                     <img src="./images/cv.png" alt="Mayara Amaral" class="hero__profile-image">
                 </div>
-                <h1 class="hero__title">Mayara Amaral</h1>
-                <p class="hero__subtitle">Sviluppatrice Front-End</p>
+                <h1 class="hero__title">MAYARA AMARAL</h1>
+                <p class="hero__subtitle">Front-End Developer</p>
                     <nav>
                         <ul class="social-links">
                             <li>
@@ -98,7 +93,7 @@
     <!-- Sezione Chi Sono -->
     <section class="about" id="about">
         <div class="about__container">
-            <h2 class="about__title">Chi Sono</h2>
+            <h2 class="about__title">CHI SONO</h2>
             <p class="about__text">
                 Sviluppatrice Front-End in formazione presso EBAC – Escola Britânica de Artes Criativas e Tecnologia. 
                 Appassionata nel trasformare idee in realtà attraverso il codice, con focus sulla creazione di interfacce 
@@ -122,37 +117,30 @@
     <!-- Sezione Progetti -->
     <section class="projects" id="projects">
         <div class="projects__container">
-            <h2 class="projects__title">Progetti</h2>
+            <h2 class="projects__title">PROGETTI</h2>
+            <p class="projects__text">Esplori alcuni progetti realizzati durante il mio percorso formativo.</p>
             <div class="projects__grid">
                 
                 <!-- Progetto 1: Clone Disney+ -->
                 <article class="project-card">
                     <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="disney-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#040714;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#1a1d29;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="400" height="250" fill="url(#disney-grad)"/>
-                            <circle cx="200" cy="125" r="60" fill="#113ccf" opacity="0.3"/>
-                            <text x="200" y="135" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">Disney+</text>
-                        </svg>
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/disney.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
                     </div>
                     <div class="project-card__content">
                         <h3 class="project-card__title">Clone Disney+</h3>
                         <p class="project-card__description">
-                            Clone completo dell'interfaccia Disney+, inclusa homepage, piani di abbonamento e sezioni di contenuto.
+                            Clone completo della piattaforma Disney+ con sezioni multiple, navigazione tab interattiva, accordion per FAQ e animazioni smooth scroll.
                         </p>
                         <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">SASS</span>
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">SASS/CSS</span>
                             <span class="project-card__tech-tag">JavaScript</span>
                             <span class="project-card__tech-tag">Gulp</span>
                         </div>
                         <div class="project-card__meta">
-                            <span class="project-card__date">2024</span>
+                            <span class="project-card__date">2025</span>
                         </div>
                         <div class="project-card__links">
                             <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
@@ -165,123 +153,26 @@
                     </div>
                 </article>
 
-                <!-- Progetto 2: Landing Page Film -->
+                <!-- Progetto 2: Landing Page Evento -->
                 <article class="project-card">
                     <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="movie-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="400" height="250" fill="url(#movie-grad)"/>
-                            <rect x="150" y="70" width="100" height="110" fill="#e94560" rx="5"/>
-                            <rect x="160" y="80" width="80" height="70" fill="#0f3460"/>
-                            <polygon points="185,105 185,125 200,115" fill="#e94560"/>
-                            <text x="200" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e94560" text-anchor="middle">CINEMA</text>
-                        </svg>
-                    </div>
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Landing Page Film</h3>
-                        <p class="project-card__description">
-                            Landing page promozionale per il lancio di un film, con design cinematografico e animazioni.
-                        </p>
-                        <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">CSS</span>
-                            <span class="project-card__tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-card__meta">
-                            <span class="project-card__date">2024</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://landing-page-filme-henna.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
-                                Vedi Progetto
-                            </a>
-                            <a href="https://github.com/MayaraSH" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--github">
-                                <img src="/src/images/github.svg" alt="GitHub" class="project-card__github-icon">
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Progetto 3: Casa Vacanze -->
-                <article class="project-card">
-                    <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="house-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#f0f8ff;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="400" height="250" fill="url(#house-grad)"/>
-                            <circle cx="80" cy="60" r="30" fill="#FFD700" opacity="0.8"/>
-                            <polygon points="200,80 120,140 280,140" fill="#8B4513"/>
-                            <rect x="140" y="140" width="120" height="80" fill="#D2691E"/>
-                            <rect x="170" y="160" width="30" height="40" fill="#4682B4"/>
-                            <rect x="210" y="160" width="30" height="40" fill="#4682B4"/>
-                            <rect x="180" y="185" width="40" height="35" fill="#654321"/>
-                            <rect x="100" y="220" width="200" height="5" fill="#228B22"/>
-                        </svg>
-                    </div>
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Casa Vacanze</h3>
-                        <p class="project-card__description">
-                            Sito web per affitto casa vacanze, con galleria fotografica e modulo di prenotazione.
-                        </p>
-                        <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">CSS</span>
-                            <span class="project-card__tech-tag">Bootstrap</span>
-                        </div>
-                        <div class="project-card__meta">
-                            <span class="project-card__date">2024</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://projeto3-ten-blush.vercel.app" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
-                                Vedi Progetto
-                            </a>
-                            <a href="https://github.com/MayaraSH" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--github">
-                                <img src="/src/images/github.svg" alt="GitHub" class="project-card__github-icon">
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Progetto 4: Landing Page Evento -->
-                <article class="project-card">
-                    <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="tech-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="400" height="250" fill="url(#tech-grad)"/>
-                            <rect x="80" y="60" width="240" height="130" fill="rgba(255,255,255,0.1)" rx="10"/>
-                            <text x="200" y="110" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#fff" text-anchor="middle">TECH</text>
-                            <text x="200" y="145" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">TALKS</text>
-                            <circle cx="120" cy="160" r="8" fill="#fff"/>
-                            <circle cx="200" cy="160" r="8" fill="#fff"/>
-                            <circle cx="280" cy="160" r="8" fill="#fff"/>
-                        </svg>
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/evento.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
                     </div>
                     <div class="project-card__content">
                         <h3 class="project-card__title">Landing Page Evento</h3>
                         <p class="project-card__description">
-                            Landing page per evento di tecnologia EBAC Tech Talks, con countdown e iscrizioni.
+                            Landing page con countdown dinamico in tempo reale per evento personale, con animazioni CSS e layout responsivo.
                         </p>
                         <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">SASS</span>
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">CSS3</span>
                             <span class="project-card__tech-tag">JavaScript</span>
-                            <span class="project-card__tech-tag">Gulp</span>
+                            <span class="project-card__tech-tag">Parcel</span>
                         </div>
                         <div class="project-card__meta">
-                            <span class="project-card__date">2024</span>
+                            <span class="project-card__date">2025</span>
                         </div>
                         <div class="project-card__links">
                             <a href="https://ebac-tech-talks-two-indol.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
@@ -294,36 +185,88 @@
                     </div>
                 </article>
 
+                <!-- Progetto 3: Landing Page Film -->
+                <article class="project-card">
+                    <div class="project-card__image-wrapper">
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/film.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Landing Page Film</h3>
+                        <p class="project-card__description">
+                            Pagina per il film "Homens e Deuses" con design cinematografico, sezioni informative strutturate e video.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">CSS3</span>
+                            <span class="project-card__tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-card__meta">
+                            <span class="project-card__date">2025</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://landing-page-filme-henna.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
+                                Vedi Progetto
+                            </a>
+                            <a href="https://github.com/MayaraSH" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--github">
+                                <img src="/src/images/github.svg" alt="GitHub" class="project-card__github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Progetto 4: Casa Vacanze -->
+                <article class="project-card">
+                    <div class="project-card__image-wrapper">
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/casa.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Casa Vacanze</h3>
+                        <p class="project-card__description">
+                            Sito web per affitto casa vacanze ad Assisi con galleria immagini, sezioni informative e form di contatto Bootstrap.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">CSS3</span>
+                            <span class="project-card__tech-tag">Bootstrap</span>
+                            <span class="project-card__tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-card__meta">
+                            <span class="project-card__date">2025</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://projeto3-ten-blush.vercel.app" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
+                                Vedi Progetto
+                            </a>
+                            <a href="https://github.com/MayaraSH" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--github">
+                                <img src="/src/images/github.svg" alt="GitHub" class="project-card__github-icon">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+
                 <!-- Progetto 5: Libreria Online -->
                 <article class="project-card">
                     <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="book-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="400" height="250" fill="url(#book-grad)"/>
-                            <rect x="140" y="60" width="50" height="130" fill="#e74c3c"/>
-                            <rect x="145" y="65" width="40" height="120" fill="#c0392b"/>
-                            <rect x="190" y="70" width="50" height="120" fill="#3498db"/>
-                            <rect x="195" y="75" width="40" height="110" fill="#2980b9"/>
-                            <rect x="240" y="80" width="50" height="110" fill="#2ecc71"/>
-                            <rect x="245" y="85" width="40" height="100" fill="#27ae60"/>
-                            <text x="200" y="220" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">LIBRERIA</text>
-                        </svg>
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/bookstore.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
                     </div>
                     <div class="project-card__content">
                         <h3 class="project-card__title">Libreria Online</h3>
                         <p class="project-card__description">
-                            E-commerce di libreria con catalogo prodotti, carrello e sistema di filtri.
+                            Sito web per libreria con catalogo prodotti dinamico e layout card responsivo.
                         </p>
                         <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">CSS</span>
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">CSS3</span>
                             <span class="project-card__tech-tag">JavaScript</span>
-                            <span class="project-card__tech-tag">Bootstrap</span>
+                            <span class="project-card__tech-tag">Bootstrap 5</span>
                         </div>
                         <div class="project-card__meta">
                             <span class="project-card__date">2024</span>
@@ -342,32 +285,23 @@
                 <!-- Progetto 6: Sorteggiatore -->
                 <article class="project-card">
                     <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="random-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="400" height="250" fill="url(#random-grad)"/>
-                            <circle cx="200" cy="125" r="70" fill="rgba(255,255,255,0.3)"/>
-                            <text x="200" y="105" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">?</text>
-                            <text x="200" y="165" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle">SORTEGGIO</text>
-                        </svg>
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/sorte.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
                     </div>
                     <div class="project-card__content">
                         <h3 class="project-card__title">Sorteggiatore</h3>
                         <p class="project-card__description">
-                            Applicazione per sorteggiare numeri casuali in un intervallo definito dall'utente.
+                            Applicazione web per generazione di numeri casuali con validazione input e feedback visivo immediato.
                         </p>
                         <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">CSS</span>
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">CSS3</span>
                             <span class="project-card__tech-tag">JavaScript</span>
                             <span class="project-card__tech-tag">Grunt</span>
                         </div>
                         <div class="project-card__meta">
-                            <span class="project-card__date">2024</span>
+                            <span class="project-card__date">2025</span>
                         </div>
                         <div class="project-card__links">
                             <a href="https://sorteadorgrunt-eight-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
@@ -383,28 +317,22 @@
                 <!-- Progetto 7: Portale Notizie -->
                 <article class="project-card">
                     <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="250" fill="#f8f9fa"/>
-                            <rect x="40" y="40" width="320" height="40" fill="#323b4c"/>
-                            <text x="200" y="68" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">NOTIZIE</text>
-                            <rect x="40" y="100" width="150" height="120" fill="#e4e4e4"/>
-                            <rect x="210" y="100" width="150" height="35" fill="#e4e4e4"/>
-                            <rect x="210" y="145" width="150" height="35" fill="#e4e4e4"/>
-                            <rect x="210" y="190" width="150" height="30" fill="#323b4c"/>
-                        </svg>
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/news.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
                     </div>
                     <div class="project-card__content">
                         <h3 class="project-card__title">Portale Notizie</h3>
                         <p class="project-card__description">
-                            Portale notizie responsive sviluppato con Bootstrap, con categorie e articoli in evidenza.
+                            Portale notizie completamente responsive con navbar Bootstrap, card grid e sezioni categorizzate.
                         </p>
                         <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">CSS</span>
-                            <span class="project-card__tech-tag">Bootstrap</span>
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">CSS3</span>
+                            <span class="project-card__tech-tag">Bootstrap 5</span>
                         </div>
                         <div class="project-card__meta">
-                            <span class="project-card__date">2024</span>
+                            <span class="project-card__date">2025</span>
                         </div>
                         <div class="project-card__links">
                             <a href="https://bootstrap13-rose.vercel.app" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
@@ -419,35 +347,23 @@
                 <!-- Progetto 8: Galleria con Plugin jQuery -->
                 <article class="project-card">
                     <div class="project-card__image-wrapper">
-                        <svg class="project-card__image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="gallery-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00b4db;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#0083b0;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="400" height="250" fill="url(#gallery-grad)"/>
-                            <rect x="60" y="60" width="80" height="80" fill="rgba(255,255,255,0.3)" rx="5"/>
-                            <rect x="160" y="60" width="80" height="80" fill="rgba(255,255,255,0.5)" rx="5"/>
-                            <rect x="260" y="60" width="80" height="80" fill="rgba(255,255,255,0.3)" rx="5"/>
-                            <rect x="110" y="160" width="80" height="60" fill="rgba(255,255,255,0.4)" rx="5"/>
-                            <rect x="210" y="160" width="80" height="60" fill="rgba(255,255,255,0.4)" rx="5"/>
-                            <text x="200" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">GALLERIA</text>
-                        </svg>
+                        <a href="https://clone-disneyplus-pi-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/images/form.jpg" alt="Clone Disney+" class="project-card__image">
+                        </a>
                     </div>
                     <div class="project-card__content">
-                        <h3 class="project-card__title">Galleria con Plugin jQuery</h3>
+                        <h3 class="project-card__title">Modulo Plugin jQuery</h3>
                         <p class="project-card__description">
-                            Galleria immagini interattiva utilizzando plugin jQuery come slick slider e lightbox.
+                            Form interattivo con validazione real-time, plugin jQuery per maschere input e modal di conferma.
                         </p>
                         <div class="project-card__tech">
-                            <span class="project-card__tech-tag">HTML</span>
-                            <span class="project-card__tech-tag">CSS</span>
+                            <span class="project-card__tech-tag">HTML5</span>
+                            <span class="project-card__tech-tag">CSS3</span>
                             <span class="project-card__tech-tag">jQuery</span>
-                            <span class="project-card__tech-tag">Plugins</span>
+                            <span class="project-card__tech-tag">JavaScript</span>
                         </div>
                         <div class="project-card__meta">
-                            <span class="project-card__date">2024</span>
+                            <span class="project-card__date">2025</span>
                         </div>
                         <div class="project-card__links">
                             <a href="https://pluginsjquery.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--primary">
@@ -467,7 +383,7 @@
     <!-- Sezione Contatti -->
     <section class="contact" id="contact">
         <div class="contact__container">
-            <h2 class="contact__title">Parliamone?</h2>
+            <h2 class="contact__title">PARLIAMONE?</h2>
             <p class="contact__description">
                 Sono sempre aperta a nuovi progetti e opportunità. Mettiamoci in contatto!
             </p>
@@ -476,7 +392,7 @@
                     Email
                 </a>
                 <a href="https://www.linkedin.com/in/mayara-cristina-do-amaral/" target="_blank" rel="noopener noreferrer" class="contact__link">
-                    LinkedIn
+                    Linkedin
                 </a>
             </div>
         </div>

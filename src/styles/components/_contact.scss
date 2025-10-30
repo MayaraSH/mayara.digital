@@ -41,7 +41,7 @@
         background-color: var(--color-text);
         color: var(--color-bg);
         text-decoration: none;
-        border-radius: 4px;
+        border-radius: 8px;
         font-weight: 700;
         transition: $transition;
 
@@ -62,11 +62,11 @@
     @include respond-to(mobile) {
         &__links {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         }
 
         &__link {
-        width: 100%;
+        width: 60%;
         }
     }
 }

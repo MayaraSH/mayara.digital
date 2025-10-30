@@ -65,7 +65,7 @@
     }
 
     &__title {
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-family: $font-title;
         font-weight: 900;
         letter-spacing: 2px;
@@ -75,7 +75,7 @@
     }
 
     &__subtitle {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 300;
         color: #fdfdfd;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
@@ -133,11 +133,11 @@
 
     @include respond-to(mobile) {
         &__title {
-        font-size: 2rem;
+        font-size: 1.7rem;
         }
 
         &__subtitle {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         }
 
         &__profile-image {

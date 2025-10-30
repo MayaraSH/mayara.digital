@@ -41,7 +41,7 @@
     &__skill-tag {
         padding: 0.5rem 1.5rem;
         background-color: var(--color-card-bg);
-        border-radius: 50px;
+        border-radius: 8px;
         font-weight: 700;
         font-size: 0.875rem;
         transition: $transition;
@@ -50,6 +50,19 @@
         &:hover {
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    }
+    
+// Wrapper para centralizar o botão CV
+    &__cv-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+        
+        // Reutiliza a classe do project-card
+        .project-card__link--primary {
+            // Opcional: ajustar largura se necessário
+            max-width: 220px;
         }
     }
 

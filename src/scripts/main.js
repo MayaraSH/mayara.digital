@@ -89,3 +89,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('Portfolio Mayara Amaral caricato con successo! 🚀');
 });
+
+
